@@ -74,7 +74,7 @@ $(CP_LD_SCRIPT): $(LD_SCRIPT)
 		cpp $(CPPFLAGS) -MMD -MP -MT $@ -MF $@.d -o $@ $<
 
 $(ELF): $(OBJS) $(CP_LD_SCRIPT)
-		$(LD) -flto -L$(BUILD_DIR) -T $(CP_LD_SCRIPT) -Map $(MAP) -o $@ $(OBJS) -L/usr/lib/n64 -lultra_rom -L$(N64_LIBGCCDIR)
+		$(LD) -L$(BUILD_DIR) -T $(CP_LD_SCRIPT) -Map $(MAP) -o $@
 
 $(TARGETS): $(ELF)
 		$(OBJCOPY) --pad-to=0x100000 --gap-fill=0xFF $< $@ -O binary
