@@ -13,8 +13,7 @@ void stage00_update(void)
 
 }
 
-void stage00_draw(void)
-{
+void stage00_draw(void) {
     glistp = glist;
     RCPInit(glistp);
     ClearBackground(0,0,255);
@@ -23,7 +22,6 @@ void stage00_draw(void)
     gSPEndDisplayList(glistp++);
     nuGfxTaskStart(glist, (s32)(glistp - glist) * sizeof(Gfx),
                    NU_GFX_UCODE_F3DEX, NU_SC_SWAPBUFFER);
-
 }
 
 void ClearBackground(u8 r, u8 g, u8 b)

@@ -1,14 +1,11 @@
-#ifndef N64_CONFIG_H
-#define N64_CONFIG_H
+#pragma once
 
-    #define SCREEN_WD 320
-    #define SCREEN_HT 240
+#define SCREEN_WD 320
+#define SCREEN_HT 240
 
-    #define GLIST_LENGTH 2048
+#define GLIST_LENGTH 2048
 
-    extern Gfx glist[GLIST_LENGTH];
-    extern Gfx *glistp;
+extern Gfx glist[];
+extern Gfx* glistp;
 
-    void RCPInit(Gfx *glistp);
-
-#endif
+void RCPInit(Gfx *glistp);

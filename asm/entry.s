@@ -1,4 +1,4 @@
-# Crash's lkscript entry.s file
+# stefanmielke's ultra64-template/2d entry.s
 # assembler directives
 .set noat      # allow manual use of $at
 .set noreorder # don't insert nops after branches
@@ -17,11 +17,11 @@ glabel entry_point
     sw    $zero, 4($t0)
     bnez  $t1, .L80246010
      addi  $t0, $t0, 8
-    lui   $t2, %hi(boot) # $t2, 0x8024
-    lui   $sp, %hi(bootStack) # $sp, 0x8020
-    addiu $t2, %lo(boot) # addiu $t2, $t2, 0x6dc4
+    lui   $t2, %hi(nuBoot) # $t2, 0x8024
+    lui   $sp, %hi(nuMainStack) # $sp, 0x8020
+    addiu $t2, %lo(nuBoot) # addiu $t2, $t2, 0x6dc4
     jr    $t2
-     addiu $sp, %lo(bootStack) # addiu $sp, $sp, 0xa00
+     addiu $sp, %lo(nuMainStack) # addiu $sp, $sp, 0xa00
     nop
     nop
     nop

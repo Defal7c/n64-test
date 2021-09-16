@@ -1,0 +1,595 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+                              builds/codesegment.o (osVirtualToPhysical)
+/usr/lib/n64/libultra_rom.a(createthread.o)
+                              builds/codesegment.o (osCreateThread)
+/usr/lib/n64/libultra_rom.a(setthreadpri.o)
+                              builds/codesegment.o (osSetThreadPri)
+/usr/lib/n64/libultra_rom.a(startthread.o)
+                              builds/codesegment.o (osStartThread)
+/usr/lib/n64/libultra_rom.a(thread.o)
+                              /usr/lib/n64/libultra_rom.a(setthreadpri.o) (__osRunQueue)
+/usr/lib/n64/libultra_rom.a(probetlb.o)
+                              /usr/lib/n64/libultra_rom.a(virtualtophysical.o) (__osProbeTLB)
+/usr/lib/n64/libultra_rom.a(visetspecial.o)
+                              builds/codesegment.o (osViSetSpecialFeatures)
+/usr/lib/n64/libultra_rom.a(initialize.o)
+                              builds/codesegment.o (__osInitialize_common)
+/usr/lib/n64/libultra_rom.a(exceptasm.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osExceptionPreamble)
+/usr/lib/n64/libultra_rom.a(interrupt.o)
+                              /usr/lib/n64/libultra_rom.a(createthread.o) (__osDisableInt)
+/usr/lib/n64/libultra_rom.a(setintmask.o)
+                              /usr/lib/n64/libultra_rom.a(exceptasm.o) (__osRcpImTable)
+/usr/lib/n64/libultra_rom.a(pimgr.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__Dom1SpeedParam)
+/usr/lib/n64/libultra_rom.a(epirawdma.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (__osEPiRawStartDma)
+/usr/lib/n64/libultra_rom.a(devmgr.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (__osDevMgrMain)
+/usr/lib/n64/libultra_rom.a(piacs.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (__osPiAccessQueueEnabled)
+/usr/lib/n64/libultra_rom.a(invalicache.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (osInvalICache)
+/usr/lib/n64/libultra_rom.a(writebackdcache.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (osWritebackDCache)
+/usr/lib/n64/libultra_rom.a(kdebugserver.o)
+                              /usr/lib/n64/libultra_rom.a(exceptasm.o) (__osThreadSave)
+/usr/lib/n64/libultra_rom.a(bzero.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (bzero)
+/usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (osCreateMesgQueue)
+/usr/lib/n64/libultra_rom.a(recvmesg.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (osRecvMesg)
+/usr/lib/n64/libultra_rom.a(sendmesg.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (osSendMesg)
+/usr/lib/n64/libultra_rom.a(seteventmesg.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (osSetEventMesg)
+/usr/lib/n64/libultra_rom.a(getcause.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osGetCause)
+/usr/lib/n64/libultra_rom.a(getsr.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osGetSR)
+/usr/lib/n64/libultra_rom.a(setfpccsr.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osSetFpcCsr)
+/usr/lib/n64/libultra_rom.a(setsr.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osSetSR)
+/usr/lib/n64/libultra_rom.a(setwatchlo.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osSetWatchLo)
+/usr/lib/n64/libultra_rom.a(sirawread.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osSiRawReadIo)
+/usr/lib/n64/libultra_rom.a(sirawwrite.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (__osSiRawWriteIo)
+/usr/lib/n64/libultra_rom.a(destroythread.o)
+                              /usr/lib/n64/libultra_rom.a(exceptasm.o) (osDestroyThread)
+/usr/lib/n64/libultra_rom.a(getthreadpri.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (osGetThreadPri)
+/usr/lib/n64/libultra_rom.a(yieldthread.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (osYieldThread)
+/usr/lib/n64/libultra_rom.a(maptlbrdb.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (osMapTLBRdb)
+/usr/lib/n64/libultra_rom.a(unmaptlball.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (osUnmapTLBAll)
+/usr/lib/n64/libultra_rom.a(vi.o)
+                              /usr/lib/n64/libultra_rom.a(visetspecial.o) (__osViNext)
+/usr/lib/n64/libultra_rom.a(viswapcontext.o)
+                              /usr/lib/n64/libultra_rom.a(vi.o) (__osViSwapContext)
+/usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+                              /usr/lib/n64/libultra_rom.a(vi.o) (osViModeNtscLan1)
+/usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+                              /usr/lib/n64/libultra_rom.a(vi.o) (osViModePalLan1)
+/usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+                              /usr/lib/n64/libultra_rom.a(vi.o) (osViModeMpalLan1)
+/usr/lib/n64/libultra_rom.a(parameters.o)
+                              /usr/lib/n64/libultra_rom.a(initialize.o) (osTvType)
+/usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (__osSetGlobalIntMask)
+/usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (__osResetGlobalIntMask)
+/usr/lib/n64/libultra_rom.a(pirawdma.o)
+                              /usr/lib/n64/libultra_rom.a(pimgr.o) (__osPiRawStartDma)
+/usr/lib/n64/libultra_rom.a(epirawread.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (__osEPiRawReadIo)
+/usr/lib/n64/libultra_rom.a(epirawwrite.o)
+                              /usr/lib/n64/libultra_rom.a(devmgr.o) (__osEPiRawWriteIo)
+/usr/lib/n64/libultra_rom.a(si.o)
+                              /usr/lib/n64/libultra_rom.a(sirawread.o) (__osSiDeviceBusy)
+/usr/lib/n64/libultra_rom.a(vimgr.o)
+                              /usr/lib/n64/libultra_rom.a(viswapcontext.o) (__additional_scanline)
+/usr/lib/n64/libultra_rom.a(getcount.o)
+                              /usr/lib/n64/libultra_rom.a(vimgr.o) (osGetCount)
+/usr/lib/n64/libultra_rom.a(timerintr.o)
+                              /usr/lib/n64/libultra_rom.a(vimgr.o) (__osTimerServicesInit)
+/usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+                              /usr/lib/n64/libultra_rom.a(vimgr.o) (__osViGetCurrentContext)
+/usr/lib/n64/libultra_rom.a(setcompare.o)
+                              /usr/lib/n64/libultra_rom.a(timerintr.o) (__osSetCompare)
+
+Allocating common symbols
+Common symbol       size              file
+
+__osBaseCounter     0x4               /usr/lib/n64/libultra_rom.a(timerintr.o)
+__osThreadSave      0x1b0             /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+__Dom2SpeedParam    0x74              /usr/lib/n64/libultra_rom.a(pimgr.o)
+__osViIntrCount     0x4               /usr/lib/n64/libultra_rom.a(timerintr.o)
+__osCurrentTime     0x8               /usr/lib/n64/libultra_rom.a(timerintr.o)
+__osPiAccessQueue   0x18              /usr/lib/n64/libultra_rom.a(piacs.o)
+__Dom1SpeedParam    0x74              /usr/lib/n64/libultra_rom.a(pimgr.o)
+nuMainStack         0x2000            builds/codesegment.o
+__osBaseTimer       0x20              /usr/lib/n64/libultra_rom.a(timerintr.o)
+__osTimerCounter    0x4               /usr/lib/n64/libultra_rom.a(timerintr.o)
+nuIdleFunc          0x4               builds/codesegment.o
+__osEventStateTab   0x78              /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+__osFinalrom        0x4               /usr/lib/n64/libultra_rom.a(initialize.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 asm/rom_header.o
+ .bss           0x0000000000000000        0x0 asm/rom_header.o
+ .reginfo       0x0000000000000000       0x18 asm/rom_header.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 asm/rom_header.o
+ .pdr           0x0000000000000000        0x0 asm/rom_header.o
+ .gnu.attributes
+                0x0000000000000000       0x10 asm/rom_header.o
+ .data          0x0000000000000000        0x0 asm/entry.o
+ .bss           0x0000000000000000        0x0 asm/entry.o
+ .reginfo       0x0000000000000000       0x18 asm/entry.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 asm/entry.o
+ .pdr           0x0000000000000000        0x0 asm/entry.o
+ .gnu.attributes
+                0x0000000000000000       0x10 asm/entry.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 builds/codesegment.o
+ .reginfo       0x0000000000000000       0x18 builds/codesegment.o
+ .sbss          0x0000000000000000        0x0 builds/codesegment.o
+ .comment       0x0000000000000000       0x4b builds/codesegment.o
+ .pdr           0x0000000000000000       0xe0 builds/codesegment.o
+ .debug_aranges
+                0x0000000000000000       0x60 builds/codesegment.o
+ .debug_info    0x0000000000000000     0x1415 builds/codesegment.o
+ .debug_abbrev  0x0000000000000000      0x477 builds/codesegment.o
+ .debug_line    0x0000000000000000      0x211 builds/codesegment.o
+ .debug_frame   0x0000000000000000      0x120 builds/codesegment.o
+ .debug_str     0x0000000000000000      0x8ae builds/codesegment.o
+ .gnu.attributes
+                0x0000000000000000       0x10 builds/codesegment.o
+ .mdebug.abi32  0x0000000000000000        0x0 builds/codesegment.o
+ .MIPS.abiflags
+                0x0000000000000000       0x18 builds/codesegment.o
+ .reginfo       0x0000000000000000       0x18 builds/codesegment.o
+ .text          0x0000000000000000      0x540 builds/codesegment.o
+ .data          0x0000000000000000       0x70 builds/codesegment.o
+ .sbss          0x0000000000000000        0x0 builds/codesegment.o
+ .bss           0x0000000000000000     0x2370 builds/codesegment.o
+ .comment       0x0000000000000000       0x4b builds/codesegment.o
+ .pdr           0x0000000000000000       0xe0 builds/codesegment.o
+ .debug_aranges
+                0x0000000000000000       0x60 builds/codesegment.o
+ .debug_info    0x0000000000000000     0x1415 builds/codesegment.o
+ .debug_abbrev  0x0000000000000000      0x477 builds/codesegment.o
+ .debug_line    0x0000000000000000      0x211 builds/codesegment.o
+ .debug_frame   0x0000000000000000      0x120 builds/codesegment.o
+ .debug_str     0x0000000000000000      0x8ae builds/codesegment.o
+ .gnu.attributes
+                0x0000000000000000       0x10 builds/codesegment.o
+ .mdebug.abi32  0x0000000000000000        0x0 builds/codesegment.o
+ .scommon       0x0000000000000000        0x0 builds/codesegment.o
+ .text          0x0000000000000000       0x60 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(virtualtophysical.o)
+ .text          0x0000000000000000       0xd0 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(createthread.o)
+ .text          0x0000000000000000       0xd0 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(setthreadpri.o)
+ .text          0x0000000000000000      0x120 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(startthread.o)
+ .text          0x0000000000000000       0x40 /usr/lib/n64/libultra_rom.a(thread.o)
+ .data          0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(thread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(thread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(thread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(thread.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(thread.o)
+ .text          0x0000000000000000       0xc0 /usr/lib/n64/libultra_rom.a(probetlb.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(probetlb.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(probetlb.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(probetlb.o)
+ .text          0x0000000000000000      0x170 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(visetspecial.o)
+ .text          0x0000000000000000      0x3a0 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .data          0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .scommon       0x0000000000000000        0x4 /usr/lib/n64/libultra_rom.a(initialize.o)
+ .text          0x0000000000000000      0x970 /usr/lib/n64/libultra_rom.a(exceptasm.o)
+ .data          0x0000000000000000       0x30 /usr/lib/n64/libultra_rom.a(exceptasm.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(exceptasm.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(exceptasm.o)
+ .rodata        0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(exceptasm.o)
+ .text          0x0000000000000000       0x90 /usr/lib/n64/libultra_rom.a(interrupt.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(interrupt.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(interrupt.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(interrupt.o)
+ .text          0x0000000000000000       0xa0 /usr/lib/n64/libultra_rom.a(setintmask.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setintmask.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setintmask.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setintmask.o)
+ .rodata        0x0000000000000000       0x80 /usr/lib/n64/libultra_rom.a(setintmask.o)
+ .text          0x0000000000000000      0x190 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .data          0x0000000000000000       0x30 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .bss           0x0000000000000000     0x11d0 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(pimgr.o)
+ COMMON         0x0000000000000000       0xec /usr/lib/n64/libultra_rom.a(pimgr.o)
+ .text          0x0000000000000000      0x1f0 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(epirawdma.o)
+ .text          0x0000000000000000      0x3c0 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .rodata        0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(devmgr.o)
+ .text          0x0000000000000000       0xf0 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .data          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .bss           0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(piacs.o)
+ COMMON         0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(piacs.o)
+ .text          0x0000000000000000       0x80 /usr/lib/n64/libultra_rom.a(invalicache.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(invalicache.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(invalicache.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(invalicache.o)
+ .text          0x0000000000000000       0x80 /usr/lib/n64/libultra_rom.a(writebackdcache.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(writebackdcache.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(writebackdcache.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(writebackdcache.o)
+ .text          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ COMMON         0x0000000000000000      0x1b0 /usr/lib/n64/libultra_rom.a(kdebugserver.o)
+ .text          0x0000000000000000       0xa0 /usr/lib/n64/libultra_rom.a(bzero.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(bzero.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(bzero.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(bzero.o)
+ .text          0x0000000000000000       0x30 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(createmesgqueue.o)
+ .text          0x0000000000000000      0x130 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(recvmesg.o)
+ .text          0x0000000000000000      0x130 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(sendmesg.o)
+ .text          0x0000000000000000       0xb0 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .data          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ COMMON         0x0000000000000000       0x78 /usr/lib/n64/libultra_rom.a(seteventmesg.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(getcause.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getcause.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getcause.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(getcause.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(getsr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getsr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getsr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(getsr.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(setfpccsr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setfpccsr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setfpccsr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setfpccsr.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(setsr.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setsr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setsr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setsr.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(setwatchlo.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setwatchlo.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setwatchlo.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setwatchlo.o)
+ .text          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(sirawread.o)
+ .text          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(sirawwrite.o)
+ .text          0x0000000000000000       0xe0 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(destroythread.o)
+ .text          0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(getthreadpri.o)
+ .text          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(yieldthread.o)
+ .text          0x0000000000000000       0x60 /usr/lib/n64/libultra_rom.a(maptlbrdb.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(maptlbrdb.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(maptlbrdb.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(maptlbrdb.o)
+ .text          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(unmaptlball.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(unmaptlball.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(unmaptlball.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(unmaptlball.o)
+ .text          0x0000000000000000      0x110 /usr/lib/n64/libultra_rom.a(vi.o)
+ .data          0x0000000000000000       0x70 /usr/lib/n64/libultra_rom.a(vi.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vi.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vi.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vi.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(vi.o)
+ .text          0x0000000000000000      0x310 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .rodata        0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(viswapcontext.o)
+ .text          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .data          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(vimodentsclan1.o)
+ .text          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .data          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(vimodepallan1.o)
+ .text          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .data          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(vimodempallan1.o)
+ .text          0x0000000000000000       0x60 /usr/lib/n64/libultra_rom.a(parameters.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(parameters.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(parameters.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(parameters.o)
+ .text          0x0000000000000000       0x40 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(setglobalintmask.o)
+ .text          0x0000000000000000       0x50 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(resetglobalintmask.o)
+ .text          0x0000000000000000       0xd0 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(pirawdma.o)
+ .text          0x0000000000000000      0x170 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(epirawread.o)
+ .text          0x0000000000000000      0x170 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(epirawwrite.o)
+ .text          0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(si.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(si.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(si.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(si.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(si.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(si.o)
+ .text          0x0000000000000000      0x340 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .data          0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .bss           0x0000000000000000     0x1220 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(vimgr.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(getcount.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getcount.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(getcount.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(getcount.o)
+ .text          0x0000000000000000      0x320 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .data          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .comment       0x0000000000000000       0x12 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ COMMON         0x0000000000000000       0x20 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .scommon       0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(timerintr.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .note          0x0000000000000000       0x14 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .comment       0x0000000000000000       0x24 /usr/lib/n64/libultra_rom.a(vigetcurrcontext.o)
+ .text          0x0000000000000000       0x10 /usr/lib/n64/libultra_rom.a(setcompare.o)
+ .data          0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setcompare.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/n64/libultra_rom.a(setcompare.o)
+ .reginfo       0x0000000000000000       0x18 /usr/lib/n64/libultra_rom.a(setcompare.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                __romPos = 0x0
+                0x0000000004000000                _bootSegmentStart = ADDR (.boot)
+                0x000000000000a340                _bootSegmentRomStart = __romPos
+
+.boot           0x0000000004000000     0x1000 load address 0x0000000000000000
+ asm/rom_header.o(.text)
+ .text          0x0000000004000000       0x40 asm/rom_header.o
+ builds/boot.6102.o(.data)
+ .data          0x0000000004000040      0xfc0 builds/boot.6102.o
+                0x0000000004000040                _binary__usr_lib_n64_PR_bootcode_boot_6102_start
+                0x0000000004001000                _binary__usr_lib_n64_PR_bootcode_boot_6102_end
+                0x0000000004001000                _bootSegmentEnd = (ADDR (.boot) + SIZEOF (.boot))
+                0x000000000000b340                _bootSegmentRomEnd = (__romPos + SIZEOF (.boot))
+                [0x000000000000a340]                __romPos = (__romPos + SIZEOF (.boot))
+                0x0000000080025c00                _codeSegmentStart = ADDR (.code)
+                0x000000000000a340                _codeSegmentRomStart = __romPos
+
+.code           0x0000000080025c00     0x9340 load address 0x0000000000001000
+ asm/entry.o(.text)
+ .text          0x0000000080025c00       0x50 asm/entry.o
+                0x0000000080025c00                entry_point
+ codesegment.o(.text)
+ .text          0x0000000080025c50      0x540 builds/codesegment.o
+                0x0000000080025c50                RCPInit
+                0x0000000080025cfc                mainproc
+                0x0000000080025d80                stage00_init
+                0x0000000080025da4                stage00_update
+                0x0000000080025dc8                stage00_draw
+                0x0000000080025eb4                ClearBackground
+                0x0000000080026080                nuBoot
+ /usr/lib/n64/PR/rspboot.o(.text)
+ .text          0x0000000080026190       0xd0 /usr/lib/n64/PR/rspboot.o
+                0x0000000080026190                rspbootTextStart
+                0x0000000080026260                rspbootTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.fifo.o(.text)
+ .text          0x0000000080026260     0x1390 /usr/lib/n64/PR/gspF3DEX2.fifo.o
+                0x0000000080026260                gspF3DEX2_fifoTextStart
+                0x00000000800275f0                gspF3DEX2_fifoTextEnd
+ /usr/lib/n64/PR/gspL3DEX2.fifo.o(.text)
+ .text          0x00000000800275f0     0x1190 /usr/lib/n64/PR/gspL3DEX2.fifo.o
+                0x00000000800275f0                gspL3DEX2_fifoTextStart
+                0x0000000080028780                gspL3DEX2_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o(.text)
+ .text          0x0000000080028780     0x1190 /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o
+                0x0000000080028780                gspF3DEX2_Rej_fifoTextStart
+                0x0000000080029910                gspF3DEX2_Rej_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o(.text)
+ .text          0x0000000080029910     0x1390 /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o
+                0x0000000080029910                gspF3DEX2_NoN_fifoTextStart
+                0x000000008002aca0                gspF3DEX2_NoN_fifoTextEnd
+ /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o(.text)
+ .text          0x000000008002aca0     0x1190 /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o
+                0x000000008002aca0                gspF3DLX2_Rej_fifoTextStart
+                0x000000008002be30                gspF3DLX2_Rej_fifoTextEnd
+ /usr/lib/n64/PR/gspS2DEX2.fifo.o(.text)
+ .text          0x000000008002be30     0x18c0 /usr/lib/n64/PR/gspS2DEX2.fifo.o
+                0x000000008002be30                gspS2DEX2_fifoTextStart
+                0x000000008002d6f0                gspS2DEX2_fifoTextEnd
+ codesegment.o(.data*)
+ .data          0x000000008002d6f0       0x70 builds/codesegment.o
+                0x000000008002d700                rspinit_dl
+                0x000000008002d720                rdpinit_dl
+ /usr/lib/n64/PR/rspboot.o(.data*)
+ .data          0x000000008002d760        0x0 /usr/lib/n64/PR/rspboot.o
+                0x000000008002d760                rspbootDataEnd
+                0x000000008002d760                rspbootDataStart
+ /usr/lib/n64/PR/gspF3DEX2.fifo.o(.data*)
+ .data          0x000000008002d760      0x420 /usr/lib/n64/PR/gspF3DEX2.fifo.o
+                0x000000008002d760                gspF3DEX2_fifoDataStart
+                0x000000008002db80                gspF3DEX2_fifoDataEnd
+ /usr/lib/n64/PR/gspL3DEX2.fifo.o(.data*)
+ .data          0x000000008002db80      0x3f0 /usr/lib/n64/PR/gspL3DEX2.fifo.o
+                0x000000008002db80                gspL3DEX2_fifoDataStart
+                0x000000008002df70                gspL3DEX2_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o(.data*)
+ .data          0x000000008002df70      0x410 /usr/lib/n64/PR/gspF3DEX2.Rej.fifo.o
+                0x000000008002df70                gspF3DEX2_Rej_fifoDataStart
+                0x000000008002e380                gspF3DEX2_Rej_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o(.data*)
+ .data          0x000000008002e380      0x420 /usr/lib/n64/PR/gspF3DEX2.NoN.fifo.o
+                0x000000008002e380                gspF3DEX2_NoN_fifoDataStart
+                0x000000008002e7a0                gspF3DEX2_NoN_fifoDataEnd
+ /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o(.data*)
+ .data          0x000000008002e7a0      0x410 /usr/lib/n64/PR/gspF3DLX2.Rej.fifo.o
+                0x000000008002e7a0                gspF3DLX2_Rej_fifoDataStart
+                0x000000008002ebb0                gspF3DLX2_Rej_fifoDataEnd
+ /usr/lib/n64/PR/gspS2DEX2.fifo.o(.data*)
+ .data          0x000000008002ebb0      0x390 /usr/lib/n64/PR/gspS2DEX2.fifo.o
+                0x000000008002ebb0                gspS2DEX2_fifoDataStart
+                0x000000008002ef40                gspS2DEX2_fifoDataEnd
+ codesegment.o(.rodata*)
+                0x000000008002ef40                _codeSegmentEnd = (ADDR (.code) + SIZEOF (.code))
+                0x0000000000013680                _codeSegmentRomEnd = (__romPos + SIZEOF (.code))
+                [0x000000000000a340]                __romPos = (__romPos + SIZEOF (.code))
+                0x000000008002ef40                _codeSegmentBssStart = ADDR (.code.noload)
+
+.code.noload    0x000000008002ef40     0x4380 load address 0x000000000000a340
+ codesegment.o(COMMON)
+ COMMON         0x000000008002ef40     0x2000 builds/codesegment.o
+                0x000000008002ef40                nuMainStack
+ codesegment.o(.scommon*)
+ .scommon       0x0000000080030f40        0x4 builds/codesegment.o
+                0x0000000080030f40                nuIdleFunc
+ codesegment.o(.bss*)
+ *fill*         0x0000000080030f44        0xc 
+ .bss           0x0000000080030f50     0x2370 builds/codesegment.o
+                0x0000000080030f50                glist
+                0x0000000080030f58                glistp
+                0x00000000800332c0                . = ALIGN (0x8)
+                0x00000000800332c0                _codeSegmentBssEnd = (ADDR (.code.noload) + SIZEOF (.code.noload))
+                0x0000000000004380                _codeSegmentBssSize = SIZEOF (.code.noload)
+
+/DISCARD/
+ *(*)
+LOAD builds/codesegment.o
+LOAD asm/entry.o
+LOAD asm/rom_header.o
+LOAD builds/boot.6102.o
+LOAD /usr/lib/n64/libultra_rom.a
+OUTPUT(test2.elf elf32-bigmips)

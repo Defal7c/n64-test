@@ -12,7 +12,7 @@ LCDEFS  = -DF3DEX_GBI_2
 LCINCS  = -I. -I$(NUSYSINC) -I/usr/include/n64/PR
 LCOPTS  = -G 0
 LDIRT   = $(ELF) $(ASMOBJECTS) $(MAP) $(TARGETS)
-LDFLAGS = -L/usr/lib/n64 $(N64LIB) -L $(N64_LIBGCCDIR) -lgcc
+LDFLAGS = -L/usr/lib/n64 $(N64LIB) -L $(N64_LIBGCCDIR)
 #LDFLAGS = $(MKDEPOPT) -L$(LIB) -L$(NUSYSLIB) -lnusys -lultra_rom -L$(N64_LIBGCCDIR) -lgcc
 CPPFLAGS := -P -Wno-trigraphs $(LCINCS)
 
@@ -22,7 +22,7 @@ ELF		= test2.elf
 TARGETS = ../test2.z64
 MAP  	= test2.map
 LD_SCRIPT = test2.ld
-#CP_LD_SCRIPT = $(BUILD_DIR)/test2_cp.ld
+CP_LD_SCRIPT = $(BUILD_DIR)/test2_cp.ld
 CP_LD_SCRIPT = test2_cp.ld
 
 ASMFILES := $(wildcard asm/*.s)
@@ -70,11 +70,11 @@ $(BOOT_OBJ): $(BOOT)
 		$(OBJCOPY) -I binary -B mips -O elf32-bigmips $< $@
 
 $(CP_LD_SCRIPT): $(LD_SCRIPT)
-		cpp $(CPPFLAGS) -DBUILD_DIR=$(BUILD_DIR) -MMD -MP -MT $@ -MF $@.d -o $@ $<
-		#cpp $(CPPFLAGS) -MMD -MP -MT $@ -MF $@.d -o $@ $<
+		#cpp $(CPPFLAGS) -DBUILD_DIR=$(BUILD_DIR) -MMD -MP -MT $@ -MF $@.d -o $@ $<
+		cpp $(CPPFLAGS) -MMD -MP -MT $@ -MF $@.d -o $@ $<
 
 $(ELF): $(OBJS) $(CP_LD_SCRIPT)
-		$(LD) -flto -L$(BUILD_DIR) -T $(CP_LD_SCRIPT) -Map $(MAP) -o $@ $(OBJS) -L/usr/lib/n64 -lultra_rom -L$(N64_LIBGCCDIR) -lgcc 
+		$(LD) -flto -L$(BUILD_DIR) -T $(CP_LD_SCRIPT) -Map $(MAP) -o $@ $(OBJS) -L/usr/lib/n64 -lultra_rom -L$(N64_LIBGCCDIR)
 
 $(TARGETS): $(ELF)
 		$(OBJCOPY) --pad-to=0x100000 --gap-fill=0xFF $< $@ -O binary

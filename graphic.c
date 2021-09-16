@@ -1,6 +1,9 @@
 #include <nusys.h>
 #include "inc/config.h"
 
+Gfx glist[];
+Gfx *glistp;
+
 static Vp viewport = {
     SCREEN_WD*2, SCREEN_HT*2, G_MAXZ/2, 0,
     SCREEN_WD*2, SCREEN_HT*2, G_MAXZ/2, 0,
