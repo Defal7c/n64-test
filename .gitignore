@@ -1,3 +1,5 @@
 builds/
 *.o
 *.map
+test2_cp.ld
+test2_cp.ld.d

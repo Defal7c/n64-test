@@ -48,8 +48,9 @@ cleaner:
 		find . -name '*.v64' -delete
 		find . -name '*.z64' -delete
 		find . -name '*.elf' -delete
-		find . -name '*.o' -delete
 		find . -name '*.bin' -delete
+		find . -name '*.o' -delete
+		find $(BUILD_DIR) -name '*.o' -delete
 		find . -name '*.plan_bak' -delete
 		find . -name '*.sprite' -delete
 		find . -name '*.dfs' -delete
