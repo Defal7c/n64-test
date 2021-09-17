@@ -5,20 +5,28 @@ void ClearBackground(u8 r, u8 g, u8 b);
 void DrawRect(int x, int y);
 
 static u8 b;
+int square_x;
+int sqSize = 64;
+int sqDir;
 
 void stage00_init(void) {
+    square_x = SCREEN_WD/2 - 32;
     b = 255;    
 }
 
 void stage00_update(void) {
+    if(square_x == SCREEN_WD - sqSize) { sqDir = -1; }
+    else if(square_x == 0) { sqDir = 1; }
+
+    square_x += sqDir;
     b -= 5;
 }
 
 void stage00_draw(void) {
     glistp = glist;
     RCPInit(glistp);
-    ClearBackground(32,32,b);
-    DrawRect(SCREEN_WD/2 - 32, SCREEN_HT/2 - 32);
+    ClearBackground(32,32,255);
+    DrawRect(square_x, (SCREEN_HT - sqSize)/ 2);
 
     gDPFullSync(glistp++);
     gSPEndDisplayList(glistp++);
