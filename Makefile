@@ -50,13 +50,14 @@ cleaner:
 		find . -name '*.elf' -delete
 		find . -name '*.bin' -delete
 		find . -name '*.o' -delete
-		find $(BUILD_DIR) -name '*.o' -delete
+		find . -name '*.map' -delete
 		find . -name '*.plan_bak' -delete
 		find . -name '*.sprite' -delete
 		find . -name '*.dfs' -delete
 		find . -name '*.raw' -delete
 		find . -name '*.gen.h' -delete
-		find builds -name '*.o' -delete
+		find $(BUILD_DIR) -name '*.ld' -delete
+		find $(BUILD_DIR) -name '*.d' -delete
 		rm -f $(BUILD_DIR)/rom/*.z64 $(BUILD_DIR)/rom/*.n64
 
 include $(COMMONRULES)
