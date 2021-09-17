@@ -1,7 +1,7 @@
 #include <nusys.h>
 #include "inc/config.h"
 
-Gfx glist[];
+Gfx glist[GLIST_LENGTH];
 Gfx *glistp;
 
 static Vp viewport = {

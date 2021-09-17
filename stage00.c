@@ -1,4 +1,6 @@
 #include <nusys.h>
+
+
 #include "inc/config.h"
 
 void ClearBackground(u8 r, u8 g, u8 b);

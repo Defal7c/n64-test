@@ -12,18 +12,17 @@ LCDEFS  = -DF3DEX_GBI_2
 LCINCS  = -I. -I$(NUSYSINC) -I/usr/include/n64/PR
 LCOPTS  = -G 0
 LDIRT   = $(ELF) $(ASMOBJECTS) $(MAP) $(TARGETS)
-LDFLAGS = -L/usr/lib/n64 $(N64LIB) -L $(N64_LIBGCCDIR)
-#LDFLAGS = $(MKDEPOPT) -L$(LIB) -L$(NUSYSLIB) -lnusys -lultra_rom -L$(N64_LIBGCCDIR) -lgcc
+#LDFLAGS = -L/usr/lib/n64 $(N64LIB) -L $(N64_LIBGCCDIR)
+LDFLAGS = $(MKDEPOPT) -L$(LIB) -L$(NUSYSLIB) -lnusys -lultra_rom -L$(N64_LIBGCCDIR) -lgcc
 CPPFLAGS := -P -Wno-trigraphs $(LCINCS)
 
 OPTIMIZER = -g
 
-ELF		= test2.elf
-TARGETS = ../test2.z64
-MAP  	= test2.map
+ELF		= $(BUILD_DIR)/test2.elf
+TARGETS = $(BUILD_DIR)/rom/test2.z64
+MAP  	= $(BUILD_DIR)/test2.map
 LD_SCRIPT = test2.ld
 CP_LD_SCRIPT = $(BUILD_DIR)/test2_cp.ld
-CP_LD_SCRIPT = test2_cp.ld
 
 ASMFILES := $(wildcard asm/*.s)
 ASMOBJS  = $(ASMFILES:.s=.o)
@@ -56,7 +55,8 @@ cleaner:
 		find . -name '*.dfs' -delete
 		find . -name '*.raw' -delete
 		find . -name '*.gen.h' -delete
-		rm -f builds/*.z64 builds/*.n64
+		find builds -name '*.o' -delete
+		rm -f $(BUILD_DIR)/rom/*.z64 $(BUILD_DIR)/rom/*.n64
 
 include $(COMMONRULES)
 
@@ -71,7 +71,8 @@ $(BOOT_OBJ): $(BOOT)
 
 $(CP_LD_SCRIPT): $(LD_SCRIPT)
 		#cpp $(CPPFLAGS) -DBUILD_DIR=$(BUILD_DIR) -MMD -MP -MT $@ -MF $@.d -o $@ $<
-		cpp $(CPPFLAGS) -MMD -MP -MT $@ -MF $@.d -o $@ $<
+		cpp $(CPPFLAGS) -I$(NUSYSINC) -MMD -MP -MT $@ -MF $@.d -o $@ $<
+		#cpp -P -Wno-trigraphs -I$(NUSYSINC) -o $@ $<
 
 $(ELF): $(OBJS) $(CP_LD_SCRIPT)
 		$(LD) -L$(BUILD_DIR) -T $(CP_LD_SCRIPT) -Map $(MAP) -o $@
