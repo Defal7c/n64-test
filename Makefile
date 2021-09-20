@@ -28,7 +28,7 @@ ASMFILES := $(wildcard asm/*.s)
 ASMOBJS  = $(ASMFILES:.s=.o)
 
 CODEFILES := $(wildcard *.c)
-SCREENFILES := $(wildcard screens/*.c)
+SCREENFILES := $(wildcard stages/*.c)
 DATAFILES   := $(wildcard data/*.c)
 CODEOBJS 	 = $(CODEFILES:.c=.o) $(SCREENFILES:.c=.o) $(DATAFILES:.c=.o) $(NUSYSLIB)/nusys_rom.o
 

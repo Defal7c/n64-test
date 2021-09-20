@@ -16,6 +16,7 @@ void mainproc(void) {
     }
 
     nuGfxInit();
+    stage00_init();
     nuGfxFuncSet((NUGfxFunc)vsyncCallback);
     nuGfxDisplayOn();
     while(1)
